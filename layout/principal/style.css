@@ -1,0 +1,9 @@
+body {
+    background: url(../imagenes/bg.jpg) repeat-x top left #E9E9E9;
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 11px;
+    line-height: 13px;
+    color: #142A6B;
+    overflow: hidden;
+
+}

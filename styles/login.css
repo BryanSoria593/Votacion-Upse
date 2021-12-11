@@ -1,0 +1,17 @@
+body{
+    background: url('../img/fondo-login.jpeg') no-repeat;
+    background-size: cover;
+}
+.banner-upse{
+    width: 100%;
+}
+.login{
+    margin-top: 30px;      
+}
+.login-in{
+    width: 300px;
+}
+.remember{
+    margin-left: 50px;
+}
+
