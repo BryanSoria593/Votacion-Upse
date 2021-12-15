@@ -1,0 +1,154 @@
+body{
+    font-family: 'Helvetica';
+}
+.header img{
+    width: 100%;
+}
+.panel{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 47px;
+    background-color: #F3F3F3;
+}
+.panel__control{
+    display: inline-block;
+    width: 55%;
+}
+.panel__control h2{
+    margin-left: 13px;
+    margin-top: 10px;
+    font-size: 18px;
+    color:  #337AB7;
+}
+.info{
+    display: flex; 
+    align-items: center;
+    height: 100%;
+    float: right;
+    width: 226px;
+    background-color: #9ABC32;
+}
+.info img{
+    width: 23px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 100%;
+    gap: 1011px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.info p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    display: inline-block;
+    color: #FFFFFF;
+}
+.info p span{
+    font-weight: bold;
+    font-size: 15px;
+}
+.info i{
+    margin-left: 10PX;
+    color: #FFFFFF;
+}
+hr{
+    margin-top: 19px;
+    color: #9ABC32;
+}
+.container{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.div{
+    height: 100px;
+    width: 210px;
+}
+.message{
+    margin-top: 22px;
+    background-color: #003E71;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+.message p{
+    color: white;
+    font-size: 13px;
+}
+.ultima-linea{
+    margin-top: 5px;
+}
+ /*STYLES OF HOVER*/
+
+ .encuesta,
+ .servicio,
+ .biblioteca,
+ .votacion{
+     cursor: pointer;    
+ }
+
+ @media (max-width: 888px){
+     .container{
+         gap: 15px;
+         grid-template-rows: 1fr 1fr;
+         grid-template-columns: repeat (4, 1fr);
+         margin-bottom: 30px;
+     }
+     .votacion{
+         grid-row: 2 / 4;
+     }
+ }
+ @media (max-width: 629px){
+     .panel__control{
+         width: 43%;
+     }
+     .info{
+         width: 46%;
+     }
+    .container{
+        display:block;    
+    }
+    .container, .encuesta,
+    .servicio,
+    .biblioteca,
+    .votacion{
+        display: block;   
+        margin: 0 auto;
+        margin-top: 10px; 
+    }
+}
+@media (max-width: 588px){
+    .panel__control{
+        width: 50%;
+    }
+    .info{
+        width: 40%;
+    }
+    .message{
+        height: 40px;
+    }
+   .container{
+       display:block;    
+   }
+   .info p{
+       width: 90px;
+   }
+   .info i{
+       
+       margin-left: 5px;
+   }
+   .container, .encuesta,
+   .servicio,
+   .biblioteca,
+   .votacion{
+       display: block;   
+       margin: 0 auto;
+       margin-top: 10px; 
+   }
+}
+
