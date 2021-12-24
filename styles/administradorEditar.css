@@ -1,0 +1,132 @@
+.container__contenidoEditar{
+    width: 85%;
+    display: flex;
+}
+.msg-editar{
+    text-align: center;
+    background-color: #e7ff9e;
+}
+.containerEditar__listas{
+    border: 1px solid black;
+    text-align: center;
+    height: 100px;
+}
+.containerEditar__listas{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+select{
+    border: none;   
+}
+.containerEditar__msg{
+    text-align: center;
+}
+.containerEditar__datos{
+    margin: 0 auto;
+    width: 99%;
+    height: 650px;
+    
+}
+
+
+/**/
+.containerPostulantes{
+    display: grid;
+    display: flex;
+    justify-content: center;
+}
+.containerPostulantes__rector{
+    width: 48%;
+    height: 590px;
+    
+}
+.containerPostulantes__vice{
+    width: 48%;
+    height: 590px;
+    
+}
+.containerPostulantes__rector h4, .containerPostulantes__vice h4{
+    text-align: center;
+}
+.separador{  
+    height: 500px;
+    border: 0.5px solid ;
+}
+
+.containerPostulantes__rector-img, .containerPostulantes__vice-img{
+    text-align: center;
+}
+
+.table{
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.table td{
+    border-bottom: 1px solid #ccc; 
+}
+.table thead{
+    display: none;     
+}
+.table, .table tbody, .table tr, .table td{
+    display: block;
+    width: 95%;
+}
+.table tr{
+    margin-bottom: 15px;
+}
+.table td{
+    width: 100%; 
+    text-align: right;
+    position: relative;
+}
+.table td::after{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;   
+    font-weight: bold;
+}
+/**/
+.buscarCandidato-Rector,.buscarCandidato-Vice{
+    margin-top: 30px;
+    margin-left: 4%;
+    width: 30%px;
+    height: 70px;
+}
+.enviar{
+    margin-bottom: 10px; 
+}
+.campo-imagen{
+    margin-left: 60%;
+    
+}
+@media (max-width: 1269px){
+    .container__contenidoEditar{
+        width: 98%; 
+        height: auto;
+    }
+} 
+@media (max-width: 672px){
+    .enviar{
+        margin-top: 50px;
+    }
+    .containerPostulantes{
+        display: grid; 
+        justify-content: center;
+        width: 100%;
+    }
+    .separador{
+        display: none;
+    }
+    .containerPostulantes__rector,.containerPostulantes__vice{
+        border-bottom: 3px solid gray;
+        width: 100%;
+        height: auto;
+    }
+    .containerEditar__datos{
+        height: auto;
+    }
+} 

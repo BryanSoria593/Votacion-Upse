@@ -223,10 +223,11 @@ thead{
         display: block;
     }
     .container__opciones{
-        background-color: #FAFAFA;
+        background-color: #FFFFFF;
         z-index: 1;
-        width: 35%;    
-        position: fixed;
+        width: 35%;
+        height: 1600px;
+        position: absolute;
         left: -100%;
         transition: all .5s;
         -webkit-transition: all .5s;
@@ -350,9 +351,7 @@ thead{
 } 
 
 
-  
-
 /*EDICIÓN DE EDITAR*/
 #editar-registro{
-    display: none;
+    display: block;
 }

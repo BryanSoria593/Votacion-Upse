@@ -77,9 +77,19 @@
         <h2>Registrar lista e imágenes</h2>
         <form class="form-registrar" action="">
             <section class="campo-lista">
-                <label for="numero-lista">Número de la lista</label>
+                Selecciona la lista <select >
+                    <option  disabled="" >Seleccione una opción</option>
+                    <option value="">A</option>
+                    <option value="">B</option>
+                    <option value="">C</option>
+                    <option value="">D</option>
+                    <option value="">E</option>
+                    <option value="">F</option>
+                </select>
+                <br>
+                <!-- <label for="numero-lista">Número de la lista</label>
                 <hr>
-                <input type="text" name="cedula-vice" id="cedula-v" placeholder="Ingrese el número" size="20">
+                <input type="text" name="cedula-vice" id="cedula-v" placeholder="Ingrese el número" size="20"> -->
             </section>
             <section class="campo-rector">
                 <label for="imagen-rector">Ingrese la imágen del rector</label>
