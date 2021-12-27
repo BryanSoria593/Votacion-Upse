@@ -1,14 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
 <h3 class="msg-registrar">Registrar postulantes</h3>
 <div class="container__contenido">
     <div class="container__contenido-consulta" id="prueba">
         <p class="msg-rector">Búsqueda de candidatos</p>
         <div class="busqueda">
             <div class="busqueda__rector">
-                <form action="" method="post">
+                <form action="" method="POST">
                     <label for="cedula-rector">Cédula de candidato a rector: </label>
                     <br>
-                    <input type="text" name="cedula-rector" id="cedula-r" placeholder="Ingrese la cédula">
-                    <input type="submit" value="Buscar">
+                    <input type="text" name="cedulaRector" id="cedula-r" placeholder="Ingrese la cédula">
+                    <input type="submit" value="Buscar" name="btn-BuscarR" href="javascript:;" 
+                    onclick="buscar($('#cedula-r').val());">
                 </form>
             </div>
             <br>
@@ -16,8 +27,8 @@
                 <form action="" method="post">
                     <label for="cedula-rector">Cédula de candidato a Vicerector: </label>
                     <br>
-                    <input type="text" name="cedula-vice" id="cedula-v" placeholder="Ingrese la cédula">
-                    <input type="submit" value="Buscar">
+                    <input type="text" name="cedulaVice" id="cedula-v" placeholder="Ingrese la cédula">
+                    <input type="submit" value="Buscar" name="btn-Buscar">
                 </form>
             </div>
         </div>
@@ -35,15 +46,8 @@
                     <th>Cargo</th>
                     <th>Facultad</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Nombres">Bryan Andrés</td>
-                        <td data-label="Apellidos">Soria Méndez</td>
-                        <td data-label="Cedula">010101010101</td>
-                        <td data-label="Correo">bryan.soriam@upse.edu.ec</td>
-                        <td data-label="Cargo">Estudiante</td>
-                        <td data-label="Facultad">Facsistel</td>
-                    </tr>
+                <tbody class="formR">
+                    <?php require_once('buscarRec.php')?>
                 </tbody>
             </table>
         </div>
@@ -58,15 +62,8 @@
                     <th>Cargo</th>
                     <th>Facultad</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Nombres">Bryan Andrés</td>
-                        <td data-label="Apellidos">Soria Méndez</td>
-                        <td data-label="Cedula">010101010101</td>
-                        <td data-label="Correo">bryan.soriam@upse.edu.ec</td>
-                        <td data-label="Cargo">Estudiante</td>
-                        <td data-label="Facultad">Facsistel</td>
-                    </tr>
+                <tbody id="form_vice">
+                    <?php require('buscarVice.php')?>
                 </tbody>
             </table>
         </div>
@@ -107,3 +104,7 @@
         <input class="enviar" type="submit" value="Guardar datos">
     </div>
 </div>
+
+    
+</body>
+</html>

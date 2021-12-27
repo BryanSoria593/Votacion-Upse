@@ -1,6 +1,5 @@
     <!-- INICIO IMPORTANDO PÁGINA DEL HEADER-->
-    <?php include_once("../../conexion/conexion.php") ?>      
-<?php require('../estructuras/header.php') ?>
+    <?php require('../estructuras/header.php') ?>
     <!-- FIN DE IMPORTANDO PÁGINA DEL HEADER-->
     <div class="container">
         <div class="container__opciones">

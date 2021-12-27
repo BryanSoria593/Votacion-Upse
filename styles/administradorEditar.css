@@ -1,3 +1,6 @@
+#editar-registro{
+    display: none;
+}
 .container__contenidoEditar{
     width: 85%;
     display: flex;

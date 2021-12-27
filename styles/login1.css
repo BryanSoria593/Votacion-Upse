@@ -6,7 +6,7 @@ body{
     width: 100%;
 }
 .login{
-    margin-top: 30px;      
+    width: 100%;   
 }
 .login-in{
     width: 300px;
@@ -14,4 +14,9 @@ body{
 .remember{
     margin-left: 50px;
 }
-
+.max-w-xs{
+    max-width: 23rem !important;
+}
+@media (max-width:518px){
+    
+}

@@ -4,6 +4,7 @@
 hr{
     color: transparent;
 }
+
 .clearfix{
     float: none;
     clear: both;
@@ -352,6 +353,3 @@ thead{
 
 
 /*EDICIÓN DE EDITAR*/
-#editar-registro{
-    display: block;
-}

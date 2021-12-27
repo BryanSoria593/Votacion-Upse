@@ -63,7 +63,7 @@ $(document).ready(function(){
         }else{
             contenidoRegistrar.style.display="none";
             mostrarEditar.style.display="block";
-            
+
         }
     }
 
