@@ -1,5 +1,5 @@
     <!-- INICIO IMPORTANDO PÁGINA DEL HEADER-->
-    <?php require('../estructuras/header.php') ?>
+<?php require('header.php') ?>
     <!-- FIN DE IMPORTANDO PÁGINA DEL HEADER-->
     <div class="container">
         <div class="container__opciones">
@@ -17,12 +17,12 @@
         </div>
         <!-- INICIO DEL REGISTRO DE LA LISTA -->
         <div class="container__contenidoSeleccionado" id="registrar-contenido">
-            <?php require('../estructuras/admin/adminRegistrar.php')?>
+            <?php require('adminRegistrar.php')?>
         </div>
         <!-- FIN DE LA PÁGINA DE REGISTRO -->
         <!-- INICIO DE LA PÁGINA DE EDITAR -->
         <div class="container__contenidoEditar" id="editar-registro" >
-           <?php require('../estructuras/admin/adminEditar.php') ?>     
+           <?php require('adminEditar.php') ?>     
 
         </div>
         <!-- FIN DE LA PÁGINA DE EDITAR -->

@@ -49,7 +49,6 @@
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
                     <div class="buscarCandidato-Rector">
                         <label for="cedula-rector">Cédula del nuevo candidato </label>
@@ -57,7 +56,6 @@
                         <input type="text" name="cedula-vice" id="cedula-v" placeholder="Ingrese la cédula">
                         <input type="submit" value="Buscar">
                     </div>
-
                 </div>
                 <div class="separador"></div>
                 <div class="containerPostulantes__vice">
@@ -84,8 +82,7 @@
                                     <td data-label="Correo">bryan.soriam@upse.edu.ec</td>
                                     <td data-label="Cargo">Estudiante</td>
                                     <td data-label="Facultad">Facsistel</td>
-                                    <td data-label="Imagen"><input class="campo-imagen" type="file" name="img-vice" id="img-vice" accept=".jpg, .png, .jpeg"></td>
-                                    
+                                    <td data-label="Imagen"><input class="campo-imagen" type="file" name="img-vice" id="img-vice" accept=".jpg, .png, .jpeg"></td>  
                                 </tr>
                             </tbody>
                         </table>

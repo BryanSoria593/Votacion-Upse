@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,22 +14,21 @@
         <p class="msg-rector">Búsqueda de candidatos</p>
         <div class="busqueda">
             <div class="busqueda__rector">
-                <form action="" method="POST">
-                    <label for="cedula-rector">Cédula de candidato a rector: </label>
+                <div> 
+                    <label class="form-label">Palabra a buscar</label>
                     <br>
-                    <input type="text" name="cedulaRector" id="cedula-r" placeholder="Ingrese la cédula">
-                    <input type="submit" value="Buscar" name="btn-BuscarR" href="javascript:;" 
-                    onclick="buscar($('#cedula-r').val());">
-                </form>
+                    <input type="text" id="buscar" name="buscar">
+                    <button onclick="buscarRector($('#buscar').val());" >Buscar</button>
+                </div>
             </div>
             <br>
             <div class="busqueda__vice">
-                <form action="" method="post">
-                    <label for="cedula-rector">Cédula de candidato a Vicerector: </label>
+                <div> 
+                    <label class="form-label">Palabra a buscar</label>
                     <br>
-                    <input type="text" name="cedulaVice" id="cedula-v" placeholder="Ingrese la cédula">
-                    <input type="submit" value="Buscar" name="btn-Buscar">
-                </form>
+                    <input type="text" id="buscarV" name="buscarV">
+                    <button onclick="buscarVice($('#buscarV').val());" >Buscar</button>
+                </div>
             </div>
         </div>
     </div>
@@ -46,8 +45,8 @@
                     <th>Cargo</th>
                     <th>Facultad</th>
                 </thead>
-                <tbody class="formR">
-                    <?php require_once('buscarRec.php')?>
+                <tbody id="datos_buscador">
+                    
                 </tbody>
             </table>
         </div>
@@ -62,8 +61,8 @@
                     <th>Cargo</th>
                     <th>Facultad</th>
                 </thead>
-                <tbody id="form_vice">
-                    <?php require('buscarVice.php')?>
+                <tbody id="datos_buscadorV">
+                    
                 </tbody>
             </table>
         </div>
@@ -104,7 +103,30 @@
         <input class="enviar" type="submit" value="Guardar datos">
     </div>
 </div>
-
-    
+<script type="text/javascript" src="../../../js-jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        function buscarRector(buscar) {
+            var parametros = {"buscar":buscar};
+            $.ajax({
+                data: parametros,
+                type:'POST',
+                url:'buscarRec.php',
+                success :function (data) {
+                    document.getElementById("datos_buscador").innerHTML=data;
+                }
+            });
+        }
+        function buscarVice(buscar) {
+            var parametros = {"buscarV":buscar};
+            $.ajax({
+                data: parametros,
+                type:'POST',
+                url:'buscarVice.php',
+                success :function (data) {
+                    document.getElementById("datos_buscadorV").innerHTML=data;
+                }
+            });
+        }
+</script>
 </body>
 </html>

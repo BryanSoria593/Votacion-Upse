@@ -125,11 +125,12 @@ hr{
 }
 
 .container__contenido-consulta{ 
-    width: 23%;    
+    margin-left: 3%;
+    width: 30%;    
 }
 .container__contenido-respuesta{
     border: 1px solid #ccc;
-    width: 77%;  
+    width: 60%;  
 }
 .container__contenido-registrar{
     margin-top: 50px;
@@ -170,7 +171,7 @@ thead{
 /*ESTILOS DEL FORMULARIO*/
 .form-registrar{
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 220px;
     
 }

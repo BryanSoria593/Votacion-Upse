@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="../../styles/panel.css">
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="../../fuentes/css/all.min.css">
-
     <title>Document</title>
 </head>
 
@@ -43,7 +41,7 @@
                     <img class="biblioteca" src="../../img/bibvir_in.jpg" onmouseover="this.src='../../img/bibvir_out.jpg';"
                     onmouseout="this.src='../../img/bibvir_in.jpg';" alt="Sistema de biblioteca">
                 </a>
-                <a href="#">
+                <a href="../login/login.php">
                     <img class="votacion" src="../../img/votacion.png" onmouseover="this.src='../../img/votacion2.png';"
                     onmouseout="this.src='../../img/votacion.png';" alt="Sistema de votación">
                 </a>

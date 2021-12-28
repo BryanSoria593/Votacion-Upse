@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="../../styles/administradorRegistra.css">
     <link rel="stylesheet" href="../../styles/administradorEditar.css">
     <link rel="stylesheet" href="../../fuentes/css/all.min.css">
-    
     <script type="text/javascript" src="../../js-jquery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../../programacion/interaccion.js"></script>
-    <script type="text/javascript" src="../../layout/estructuras/admin/ajax.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -33,5 +31,3 @@
             <i class="fas fa-caret-down"></i>
         </div>
     </div>    
-</body>
-</html>
